@@ -33,7 +33,13 @@ for campo in data:
         if nome in user_id:
             campo[1]=user_id[nome]
 
+#elimino da tutti i log il campo “Utente coinvolto”
+for campo in data:       
+       campo.pop(2)
 
+#salvo la lista di log anonimizzata nello stesso formato di partenza (json)
+output =open('anonimizza_12_output.json','w')
+json.dump(data,output, indent=4)
 
     
  
