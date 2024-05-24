@@ -16,6 +16,15 @@ with open(file_path,'r') as file:
 # creo un dizionario vuoto 
 user_id={}
 
+#inizializzo contatore
+identific_unico=1
+
+for campo in data:
+	nome=campo[1]
+	if nome not in user_id:
+	user_id[nome]=identific_unico
+	identific_unico += 1
+	
     
     
  
