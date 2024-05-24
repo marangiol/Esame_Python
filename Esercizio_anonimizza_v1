@@ -25,7 +25,15 @@ for campo in data:
 	if nome not in user_id: 
 		user_id[nome]=identific_unico
 		identific_unico += 1
-	
-    
+
+#sostitusco nel log l’identificatore unico al nome dell’utente
+
+for campo in data:       
+        nome= campo[1]
+        if nome in user_id:
+            campo[1]=user_id[nome]
+
+
+
     
  
