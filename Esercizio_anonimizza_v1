@@ -20,10 +20,11 @@ user_id={}
 identific_unico=1
 
 for campo in data:
-	nome=campo[1]
-	if nome not in user_id:
-	user_id[nome]=identific_unico
-	identific_unico += 1
+	nome=campo[1]  
+	#estraggo il nome e lo aggiungo nel dizionario vuoto
+	if nome not in user_id: 
+		user_id[nome]=identific_unico
+		identific_unico += 1
 	
     
     
