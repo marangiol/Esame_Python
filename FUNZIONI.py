@@ -2,7 +2,7 @@
 """
 Created on Mon May 27 11:08:41 2024
 
-@author: dalil
+@author: marianna - federica - dalila
 """
 
 import json
@@ -14,7 +14,7 @@ def caricafile (file_path):
 
 def trovanomi (data):
     """
-    Questa funzone mi aiuta ad associare ad ogni utente un numero 
+    Questa funzione associa ogni utente un numero 
     """
     user_id = {}
 
@@ -34,10 +34,17 @@ def sostituisci (data,user_id):
     return data 
 
     """
-    Questa funzone mi permette di eliminare tutte le sezioni 3 di ogni campo
+    Questa funzone elimina tutte le sezioni '3' di ogni campo
     """
 def elimina (data):
     for campo in data:       
        campo.pop(2)
     return data   
 
+    """
+    Questa funzone salva il file python in json 
+    """
+def salvajson (data,output):
+    with open(output,'w') as file:
+        json.dump(data,file, indent=4)   
+    
