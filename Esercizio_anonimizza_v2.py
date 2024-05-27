@@ -4,6 +4,7 @@
 
 @author: marianna - federica - dalila
 """
+# File di origine Python del codice .txt 'Esercizio_anonimizza_v1'
 import json
 
 file_path = 'anonimizza_test2.json'
