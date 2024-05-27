@@ -11,3 +11,6 @@ file_path = 'anonimizza_test2.json'
 
 data=SL.caricafile(file_path)
 user_id, identific_unico=SL.trovanomi(data)
+
+data=SL.sostituisci(data,user_id)
+data=SL.elimina(data)   
