@@ -2,7 +2,7 @@
 """
 24 - 05 - 2024
 
-@author: marianna
+@author: marianna - federica - dalila
 """
 import json
 
@@ -10,7 +10,6 @@ file_path = 'anonimizza_test2.json'
 
 with open(file_path,'r') as file:
     data=json.load(file)
-	
 	
 	
 # creo un dizionario vuoto 
