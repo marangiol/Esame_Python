@@ -10,3 +10,4 @@ import FUNZIONI as SL
 file_path = 'anonimizza_test2.json'
 
 data=SL.caricafile(file_path)
+user_id, identific_unico=SL.trovanomi(data)
