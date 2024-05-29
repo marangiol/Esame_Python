@@ -42,5 +42,10 @@ for campo in data:
 output ='anonimizza_13_output.json'
 with open(output,'w') as file:
     json.dump(data,file, indent=4)  
+	
+#salvo la tabella di associazione utente-codice
+
+with open(output, 'w') as file:
+    json.dump(user_id,file, indent=4)
     
  
