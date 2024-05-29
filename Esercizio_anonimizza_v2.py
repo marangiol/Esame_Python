@@ -16,3 +16,4 @@ data=SL.elimina(data)
 
 output ='anonimizza_sottoprogrammi_output.json'
 SL.salvajson(data,output)
+SL.salva_user_id(user_id,output)
