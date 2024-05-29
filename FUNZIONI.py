@@ -47,4 +47,10 @@ def elimina (data):
 def salvajson (data,output):
     with open(output,'w') as file:
         json.dump(data,file, indent=4)   
-    
+
+def salva_user_id(user_id, output):
+    """
+    Questa funzione salva la tabella di associazione utente-codice in formato JSON
+    """
+    with open(output, 'w') as file:
+        json.dump(user_id, file, indent=4)
